@@ -198,11 +198,45 @@
    ;; Beliefs
    ( ( 0 believe 0 )
      ( But what lead you to believe 4 ? ) )
-    ( ( 0 doubt 0 )
+   ( ( 0 doubt 0 )
       ( Is there a reason you doubt 4 ? ) )
 
+
+
+   ;; causality 
+   ( ( 0 because 0 )
+      ( Is that the real reason ? ) )
+  
+   ;; absolutes 
+   ( ( 0 always 0 )
+    ( Always? Can you think of an exception ? ) )
+   ( ( 0 never 0 )
+    ( Never? What do you imagine would happen if you did 4 ? ) )
+  
+   ;; ability / blockage
+   ( ( 0 can't 0 )
+     ( Why do you think you can't 4 ? ) )
+   ( ( 0 couldn't 0 )
+     ( What is stopping you from being able to 4 ? ) )
+  
+   ;; time 
+   ( ( 0 late 0 )
+     ( It's never too late. Try to catch up. ) )
+   ( ( 0 early 0 )
+     ( Is there a particular reason you are 4 ? ) )
+
+   
     
-	 ;; the catch-alls
-	 ( (0) 
-	   (Could you expand on that?) ) ) ) 
+	 ;; the catch-alls / general-purpose responses
+   ( ( 0 ) ( Could you expand on that ? ) )
+   ( ( 0 ) ( Could you expand on that ? ) )
+   ( ( 0 ) ( Why do you say that ? ) )
+   ( ( 0 ) ( What comes to mind when you say that ? ) )
+   ( ( 0 ) ( Tell me more about that ? ) )
+   ( ( 0 ) ( That’s interesting — go on ? ) )
+   ( ( 0 ) ( How does that make you feel ? ) )
+   ( ( 0 ) ( What do you think is the deeper reason for that ? ) )
+   ( ( 0 ) ( Can you give me an example ? ) )
+  ) 
+) 
 
