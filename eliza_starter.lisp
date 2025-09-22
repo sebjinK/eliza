@@ -35,6 +35,7 @@
     ;; swap me and you
     ( ( equal ( car sentence ) 'me )
       ( cons 'you ( change-pros ( cdr sentence ) ) ) )
+    ;; swap am and are 
     ( ( equal ( car sentence ) 'am )
       ( cons 'are ( change-pros ( cdr sentence ) ) ) )
     
@@ -173,7 +174,7 @@
 ;;---------------------------------------------------------------------------
 
 ( setq database
-       '(
+  '(
 	 ;; example greetings/farewells -- change them to sound like you
 	 ( (Hello 0)
 	   (Hello - have a seat and tell me how you feel today.) )
@@ -185,8 +186,23 @@
 	 ;; feelings
 	 ( (0 you think 0)
 	   (And just why do you think 4 ?) )
+   ;; Additions to the database
+   ( ( 0 you feel 0 )
+     ( How long have you felt 4 ? ) )
+   ( ( 0 you are feeling 0 )
+     ( What do you think is the feeling behind 4 ? ) )
+   ( ( 0 you are happy 0 )
+     ( What do you think would help you feel that happiness ? ) )
 
+
+   ;; Beliefs
+   ( ( 0 believe 0 )
+     ( But what lead you to believe 4 ? ) )
+    ( ( 0 doubt 0 )
+      ( Is there a reason you doubt 4 ? ) )
+
+    
 	 ;; the catch-alls
 	 ( (0) 
-	   (Could you expand on that?) ) ) )
+	   (Could you expand on that?) ) ) ) 
 
